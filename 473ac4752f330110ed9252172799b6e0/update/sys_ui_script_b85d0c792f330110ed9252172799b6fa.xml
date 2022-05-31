@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Client-side logic for Angular App</description>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_782668_myangular.angular_app_client_lo</name>
+        <script><![CDATA[angular.module('angularapp',[]);
+angular.module('angularapp').controller('AngularAppCtrl', function($scope) {
+	
+	$scope.myVar = '';
+	$scope.i = 0;
+	
+	$scope.clearTxt = function() {
+		$scope.myVar = '';
+		$scope.i++;
+		alert("The myVar value was cleared " + $scope.i + " times by " + g_user.userName + ".");
+	};
+});]]></script>
+        <script_name>angular_app_client_logic</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-31 17:09:58</sys_created_on>
+        <sys_id>b85d0c792f330110ed9252172799b6fa</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_782668_myangular.angular_app_client_lo</sys_name>
+        <sys_package display_value="MyAngular App" source="x_782668_myangular">473ac4752f330110ed9252172799b6e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MyAngular App">473ac4752f330110ed9252172799b6e0</sys_scope>
+        <sys_update_name>sys_ui_script_b85d0c792f330110ed9252172799b6fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-31 17:35:21</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>
